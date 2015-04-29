@@ -1,0 +1,412 @@
+/*+variables*/
+/*-variables*/
+/*+general*/
+/* line 6, ../sass/main.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+}
+
+/* line 11, ../sass/main.scss */
+.l {
+  float: left;
+}
+
+/* line 12, ../sass/main.scss */
+.r {
+  float: right;
+}
+
+/* line 13, ../sass/main.scss */
+.clear {
+  clear: both;
+}
+
+/* line 14, ../sass/main.scss */
+img {
+  border: none;
+}
+
+/* line 15, ../sass/main.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 19, ../sass/main.scss */
+.top-line, .bottom-line {
+  height: 6px;
+  background-color: #333333;
+}
+
+/* line 24, ../sass/main.scss */
+body {
+  	/*-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background: url(../img/bg.jpg) center;*/
+}
+
+/* line 31, ../sass/main.scss */
+#bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+}
+
+/*header*/
+/* line 41, ../sass/main.scss */
+header {
+  margin: 60px 0px 60px;
+}
+/* line 43, ../sass/main.scss */
+header h1, header h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+/* line 49, ../sass/main.scss */
+header h1 {
+  font-size: 29px;
+  font-weight: 700;
+}
+/* line 53, ../sass/main.scss */
+header h2 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: -1px;
+}
+/* line 58, ../sass/main.scss */
+header .intro {
+  margin: 35px auto -15px;
+  width: 400px;
+  font: italic 14px Arial, sans-serif;
+  text-align: center;
+}
+/* line 63, ../sass/main.scss */
+header .intro p {
+  color: #777;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+/*project*/
+/* line 71, ../sass/main.scss */
+.project {
+  width: 700px;
+  margin: 0px auto 40px;
+  position: relative;
+}
+/* line 75, ../sass/main.scss */
+.project .project_header {
+  background: url("../img/project_header_bg.jpg") repeat-x;
+  height: 50px;
+  border: 1px solid #315589;
+}
+/* line 80, ../sass/main.scss */
+.project .project_header:hover .project_controls {
+  visibility: visible;
+}
+/* line 84, ../sass/main.scss */
+.project .project_header .project_controls {
+  visibility: hidden;
+  width: 55px;
+  height: 14px;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+}
+/* line 91, ../sass/main.scss */
+.project .project_header .project_controls a {
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: left;
+}
+/* line 97, ../sass/main.scss */
+.project .project_header .project_controls a.project_edit {
+  background: url("../img/stripe.png") no-repeat 0px -25px;
+  padding-right: 10px;
+  border-right: 1px solid #5284BF;
+}
+/* line 101, ../sass/main.scss */
+.project .project_header .project_controls a.project_edit:hover {
+  background: url("../img/stripe.png") no-repeat 0px -65px;
+}
+/* line 105, ../sass/main.scss */
+.project .project_header .project_controls a.project_delete {
+  background: url("../img/stripe.png") no-repeat 0px -45px;
+  margin-left: 10px;
+}
+/* line 108, ../sass/main.scss */
+.project .project_header .project_controls a.project_delete:hover {
+  background: url("../img/stripe.png") no-repeat 0px -85px;
+}
+/* line 114, ../sass/main.scss */
+.project h3 {
+  font: normal 18px Arial, sans-serif;
+  color: #fff;
+  padding: 16px 0px 0px 53px;
+  text-shadow: 1px 1px 1px #28405D;
+}
+/* line 120, ../sass/main.scss */
+.project:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url("../img/stripe.png") no-repeat 0px 0px;
+  display: block;
+  position: absolute;
+  left: 17px;
+  top: 15px;
+  z-index: 99;
+}
+/* line 131, ../sass/main.scss */
+.project .project_todos_form {
+  height: 50px;
+  background: #e1e1e1;
+  background: -moz-linear-gradient(top, #e1e1e1 0%, #cccccc 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #e1e1e1), color-stop(100%, #cccccc));
+  background: -webkit-linear-gradient(top, #e1e1e1 0%, #cccccc 100%);
+  background: -o-linear-gradient(top, #e1e1e1 0%, #cccccc 100%);
+  background: -ms-linear-gradient(top, #e1e1e1 0%, #cccccc 100%);
+  background: linear-gradient(to bottom, #e1e1e1 0%, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#cccccc', GradientType=0 );
+  border: 1px solid #AAAAAA;
+  border-top: 0px;
+  position: relative;
+}
+/* line 144, ../sass/main.scss */
+.project .project_todos_form:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url("../img/stripe.png") no-repeat -30px 0px;
+  display: block;
+  position: absolute;
+  left: 18px;
+  top: 14px;
+  z-index: 99;
+}
+/* line 155, ../sass/main.scss */
+.project .project_todos_form input.description {
+  margin: 10px -1px 0px 52px;
+  height: 28px;
+  padding: 1px 10px 1px 10px;
+  border: 0px;
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 2px 0px 0px 2px;
+  display: block;
+  float: left;
+  width: 510px;
+  color: #333;
+}
+/* line 167, ../sass/main.scss */
+.project .project_todos_form a.add-btn {
+  background: #96cdb0;
+  background: -moz-linear-gradient(top, #96cdb0 0%, #4d8464 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #96cdb0), color-stop(100%, #4d8464));
+  background: -webkit-linear-gradient(top, #96cdb0 0%, #4d8464 100%);
+  background: -o-linear-gradient(top, #96cdb0 0%, #4d8464 100%);
+  background: -ms-linear-gradient(top, #96cdb0 0%, #4d8464 100%);
+  background: linear-gradient(to bottom, #96cdb0 0%, #4d8464 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96cdb0', endColorstr='#4d8464', GradientType=0 );
+  color: #fff;
+  border: 1px solid #447557;
+  border-radius: 0px 4px 4px 0px;
+  display: block;
+  float: left;
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  font: normal 14px Arial, sans-serif;
+  padding: 6px 22px 0px 22px;
+  height: 22px;
+}
+/* line 187, ../sass/main.scss */
+.project .project_todos_form a.add-btn:hover {
+  background: #80c29e;
+  background: -moz-linear-gradient(top, #80c29e 0%, #46775a 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #80c29e), color-stop(100%, #46775a));
+  background: -webkit-linear-gradient(top, #80c29e 0%, #46775a 100%);
+  background: -o-linear-gradient(top, #80c29e 0%, #46775a 100%);
+  background: -ms-linear-gradient(top, #80c29e 0%, #46775a 100%);
+  background: linear-gradient(to bottom, #80c29e 0%, #46775a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80c29e', endColorstr='#46775a', GradientType=0 );
+}
+/* line 199, ../sass/main.scss */
+.project table {
+  width: 698px;
+  margin-left: 1px;
+  background-color: #fff;
+  display: block;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+}
+/* line 206, ../sass/main.scss */
+.project table tr:first-child {
+  border-top: 0px;
+}
+/* line 209, ../sass/main.scss */
+.project table tr:last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+/* line 212, ../sass/main.scss */
+.project table tr.checked .task_description {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+/* line 213, ../sass/main.scss */
+.project table tr {
+  border-top: 1px solid #E7EBEA;
+  display: block;
+  width: 698px;
+}
+/* line 217, ../sass/main.scss */
+.project table tr:hover {
+  background-color: #FCFED5;
+}
+/* line 219, ../sass/main.scss */
+.project table tr:hover .task_controls {
+  visibility: visible;
+}
+/* line 221, ../sass/main.scss */
+.project table tr .task_check_holder {
+  padding: 15px 16px 13px 16px;
+}
+/* line 224, ../sass/main.scss */
+.project table tr .task_td_lines {
+  border-right: 1px solid #EFDADF;
+  border-left: 1px solid #EFDADF;
+  width: 4px;
+}
+/* line 229, ../sass/main.scss */
+.project table tr .task_description {
+  font: normal 15px Arial, sans-serif;
+  color: #999999;
+  padding: 14px 15px;
+  width: 500px;
+  border-right: 1px solid #E7EBEA;
+}
+/* line 236, ../sass/main.scss */
+.project table tr .task_controls {
+  visibility: hidden;
+  padding-left: 18px;
+}
+/* line 239, ../sass/main.scss */
+.project table tr .task_controls a {
+  display: block;
+  float: left;
+}
+/* line 243, ../sass/main.scss */
+.project table tr .task_controls .task_move_link {
+  height: 13px;
+  width: 10px;
+  background: url("../img/stripe.png") no-repeat 0px -105px;
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+  cursor: move;
+  cursor: -webkit-grabbing;
+}
+/* line 251, ../sass/main.scss */
+.project table tr .task_controls .task_move_link:hover {
+  background: url("../img/stripe.png") no-repeat -25px -105px;
+}
+/* line 255, ../sass/main.scss */
+.project table tr .task_controls .task_edit_link {
+  height: 12px;
+  width: 12px;
+  background: url("../img/stripe.png") no-repeat 0px -120px;
+  padding-right: 10px;
+  margin-left: 10px;
+  border-right: 1px solid #ccc;
+}
+/* line 262, ../sass/main.scss */
+.project table tr .task_controls .task_edit_link:hover {
+  background: url("../img/stripe.png") no-repeat -25px -120px;
+}
+/* line 266, ../sass/main.scss */
+.project table tr .task_controls .task_delete_link {
+  height: 12px;
+  width: 12px;
+  background: url("../img/stripe.png") no-repeat 0px -135px;
+  margin-left: 10px;
+}
+/* line 271, ../sass/main.scss */
+.project table tr .task_controls .task_delete_link:hover {
+  background: url("../img/stripe.png") no-repeat -25px -135px;
+}
+
+/* line 280, ../sass/main.scss */
+.add_todo_list_btn {
+  background: url("../img/project_header_bg.jpg") repeat-x;
+  height: 33px;
+  border: 1px solid #315589;
+  position: relative;
+  font: bold 18px Arial, sans-serif;
+  color: #fff;
+  display: block;
+  width: 160px;
+  margin: 10px auto 90px;
+  padding: 16px 0px 0px 53px;
+  text-shadow: 1px 1px 1px #28405D;
+  border-radius: 3px;
+}
+/* line 294, ../sass/main.scss */
+.add_todo_list_btn:hover .project_controls {
+  visibility: visible;
+}
+/* line 298, ../sass/main.scss */
+.add_todo_list_btn:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url("../img/stripe.png") no-repeat -60px 0px;
+  display: block;
+  position: absolute;
+  left: 18px;
+  top: 14px;
+  z-index: 99;
+}
+
+/*footer*/
+/* line 312, ../sass/main.scss */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+/*fix bottom-line on bottom of window if height of content less then height of window*/
+/* line 323, ../sass/main.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 326, ../sass/main.scss */
+.page-wrapper {
+  min-height: 100%;
+  margin-bottom: -6px;
+  position: relative;
+}
+
+/* line 331, ../sass/main.scss */
+* html .page-wrapper {
+  height: 100%;
+}
+
+/* line 334, ../sass/main.scss */
+.page-buffer {
+  height: 6px;
+  background-color: none;
+}
+
+/*end*/

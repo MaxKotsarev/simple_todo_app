@@ -1,0 +1,38 @@
+/*
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 24 of g:/Dropbox/4_projects/RG_test_task/test_todo_app/sass/main.scss
+
+19:   
+20:   &:hover{
+21:     color: $blue-link-h;
+22:     border-bottom: 1px dotted $blue-link-bbh;
+23:   }
+24: }
+
+Backtrace:
+g:/Dropbox/4_projects/RG_test_task/test_todo_app/sass/main.scss:24
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1165:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1101:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:43:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:393:in `_to_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  }\": expected selector or at-rule, was \"}\"\A         on line 24 of g:/Dropbox/4_projects/RG_test_task/test_todo_app/sass/main.scss\A \A 19:   \A 20:   &:hover{\A 21:     color: $blue-link-h;\A 22:     border-bottom: 1px dotted $blue-link-bbh;\A 23:   }\A 24: }"; }

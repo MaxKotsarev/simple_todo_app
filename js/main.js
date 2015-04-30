@@ -157,11 +157,15 @@
 		var ProjectPosition = $(this).parents('.project').attr('data-project-position');
 		var Project = Projects[ProjectPosition];
 		var newProjectName = prompt("Edit TODO-list's name:", Project.name);
-		Project.name = newProjectName;
-		Projects[ProjectPosition] = Project;
-		listAllProjects();
-		localStorage.setItem("projects",JSON.stringify(Projects));	
-		return false;
+		if (newProjectName) {
+			Project.name = newProjectName;
+			Projects[ProjectPosition] = Project;
+			listAllProjects();
+			localStorage.setItem("projects",JSON.stringify(Projects));	
+			return false;
+		}else{
+			return false;
+		}
 	});
 
 
@@ -189,11 +193,15 @@
 		var TaskId = $(this).parents('tr').attr('data-task-id');
 		var Task = ToDos[TaskId];
 		var newTaskName = prompt("Edit this task description:", Task.description);
-		Task.description = newTaskName;
-		ToDos[TaskId] = Task;
-		listAllProjects();
-		localStorage.setItem("todos",JSON.stringify(ToDos));	
-		return false;
+		if (newTaskName) {
+			Task.description = newTaskName;
+			ToDos[TaskId] = Task;
+			listAllProjects();
+			localStorage.setItem("todos",JSON.stringify(ToDos));	
+			return false;
+		}else{
+			return false;
+		}
 	});
 
 //TASK add by pressing enter key
